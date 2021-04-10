@@ -172,6 +172,6 @@ IP=$(pct exec $CTID ip a s dev eth0 | sed -n '/inet / s/\// /p' | awk '{print $2
 info "Successfully created LXC to $CTID."
 msg "
 
-IP: ${IP}
+Portainer Endpoint: ${IP}:9001
 Enjoy! 
 "
